@@ -43,3 +43,4 @@ if __name__ == '__main__':
     print("{} == {}? {}".format(vec2, vec3, vec3 == vec2))
     print("{} != {}? {}".format(vec2, vec3, vec3 != vec2))
 
+

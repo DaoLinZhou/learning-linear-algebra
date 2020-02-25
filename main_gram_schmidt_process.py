@@ -1,5 +1,5 @@
 from playLA.Vector import Vector
-from playLA.GramSchmidtProcess import gram_schmidt_process
+from playLA.GramSchmidtProcess import *
 
 
 if __name__ == '__main__':
@@ -20,3 +20,11 @@ if __name__ == '__main__':
         print(row)
     print(res2[0].dot(res2[1]))
     print()
+
+    # 测试最小二乘
+    basis3 = Matrix([[-1, 1],
+                     [1, 0],
+                     [0, 1]])
+    point = Vector([1, -2, 1])
+    tr_point = least_squares(basis3, point)
+    print(tr_point)
